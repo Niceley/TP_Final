@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des utilisateurs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Gestion des utilisateurs</h1>
+
+    <form id="userForm">
+        <input type="hidden" id="userId">
+        <input type="text" id="name" placeholder="Nom" required data-cy="name-input">
+        <input type="email" id="email" placeholder="Email" required data-cy="email-input">
+        <button type="submit" data-cy="submit-user-btn">Ajouter</button>
+    </form>
+
+    <h2>Liste des utilisateurs</h2>
+    <ul id="userList" data-cy="users-list">
+        <!-- Exemple d'utilisateur, à remplacer par du contenu dynamique -->
+        <li>
+            <span class="user-name">John Doe</span>
+            <span class="user-email">john@example.com</span>
+            <button data-cy="edit-user-btn">Modifier</button>
+            <button data-cy="delete-user-btn">Supprimer</button>
+        </li>
+        <!-- Ajoutez d'autres utilisateurs ici -->
+    </ul>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
